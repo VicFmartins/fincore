@@ -1,5 +1,0 @@
-com\fincore\domain\ledger\LedgerEntry.class
-com\fincore\domain\account\Account.class
-com\fincore\domain\ledger\LedgerEntryType.class
-com\fincore\domain\transaction\TransactionStatus.class
-com\fincore\domain\transaction\Transaction.class
