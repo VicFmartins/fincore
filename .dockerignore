@@ -1,0 +1,7 @@
+.git
+.idea
+.tmp_docx
+**/target
+**/.classpath
+**/.project
+**/.settings

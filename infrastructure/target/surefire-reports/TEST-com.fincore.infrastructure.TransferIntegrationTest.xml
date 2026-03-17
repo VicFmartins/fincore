@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.fincore.infrastructure.TransferIntegrationTest" time="33.169" tests="11" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\vitor\OneDrive\Documentos\Playground\fincore\infrastructure\target\test-classes;C:\Users\vitor\OneDrive\Documentos\Playground\fincore\infrastructure\target\classes;C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\target\classes;C:\Users\vitor\OneDrive\Documentos\Playground\fincore\domain\target\classes;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\vitor\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\vitor\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\vitor\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\vitor\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\vitor\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\vitor\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\vitor\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\vitor\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\vitor\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\vitor\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\vitor\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\vitor\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\vitor\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\vitor\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\vitor\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\vitor\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\vitor\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\vitor\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\vitor\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\vitor\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\vitor\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\vitor\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\vitor\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\vitor\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\vitor\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\vitor\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\vitor\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\vitor\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\vitor\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\kafka\spring-kafka\3.2.4\spring-kafka-3.2.4.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-messaging\6.1.13\spring-messaging-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\retry\spring-retry\2.0.9\spring-retry-2.0.9.jar;C:\Users\vitor\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1.jar;C:\Users\vitor\.m2\repository\com\github\luben\zstd-jni\1.5.6-3\zstd-jni-1.5.6-3.jar;C:\Users\vitor\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\vitor\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.3.4\spring-boot-starter-actuator-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.3.4\spring-boot-actuator-autoconfigure-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-actuator\3.3.4\spring-boot-actuator-3.3.4.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-jakarta9\1.13.4\micrometer-jakarta9-1.13.4.jar;C:\Users\vitor\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.6.0\springdoc-openapi-starter-webmvc-ui-2.6.0.jar;C:\Users\vitor\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.6.0\springdoc-openapi-starter-webmvc-api-2.6.0.jar;C:\Users\vitor\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.6.0\springdoc-openapi-starter-common-2.6.0.jar;C:\Users\vitor\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.22\swagger-core-jakarta-2.2.22.jar;C:\Users\vitor\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\vitor\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.22\swagger-annotations-jakarta-2.2.22.jar;C:\Users\vitor\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.22\swagger-models-jakarta-2.2.22.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\vitor\.m2\repository\org\webjars\swagger-ui\5.17.14\swagger-ui-5.17.14.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-registry-prometheus\1.13.4\micrometer-registry-prometheus-1.13.4.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-core\1.13.4\micrometer-core-1.13.4.jar;C:\Users\vitor\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\vitor\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-core\1.2.1\prometheus-metrics-core-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-model\1.2.1\prometheus-metrics-model-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-config\1.2.1\prometheus-metrics-config-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-tracer-common\1.2.1\prometheus-metrics-tracer-common-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-exposition-formats\1.2.1\prometheus-metrics-exposition-formats-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-shaded-protobuf\1.2.1\prometheus-metrics-shaded-protobuf-1.2.1.jar;C:\Users\vitor\.m2\repository\org\flywaydb\flyway-core\10.10.0\flyway-core-10.10.0.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.17.2\jackson-dataformat-toml-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\vitor\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\vitor\.m2\repository\org\flywaydb\flyway-database-postgresql\10.10.0\flyway-database-postgresql-10.10.0.jar;C:\Users\vitor\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\vitor\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\vitor\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\vitor\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\vitor\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\vitor\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\vitor\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\vitor\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\vitor\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\vitor\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\vitor\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\vitor\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\vitor\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\vitor\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\vitor\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\vitor\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\vitor\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\vitor\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\vitor\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\vitor\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\vitor\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\vitor\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\vitor\.m2\repository\org\testcontainers\junit-jupiter\1.19.8\junit-jupiter-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\testcontainers\1.19.8\testcontainers-1.19.8.jar;C:\Users\vitor\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\vitor\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\vitor\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\vitor\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\vitor\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\vitor\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\vitor\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.6\docker-java-transport-zerodep-3.3.6.jar;C:\Users\vitor\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\vitor\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\vitor\.m2\repository\org\testcontainers\postgresql\1.19.8\postgresql-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\jdbc\1.19.8\jdbc-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\database-commons\1.19.8\database-commons-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\kafka\1.19.8\kafka-1.19.8.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\vitor\AppData\Local\Temp\surefire15937005671510681532\surefirebooter-20260317170239933_3.jar C:\Users\vitor\AppData\Local\Temp\surefire15937005671510681532 2026-03-17T17-02-36_596-jvmRun1 surefire-20260317170239933_1tmp surefire_0-20260317170239933_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\vitor\OneDrive\Documentos\Playground\fincore\infrastructure\target\test-classes;C:\Users\vitor\OneDrive\Documentos\Playground\fincore\infrastructure\target\classes;C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\target\classes;C:\Users\vitor\OneDrive\Documentos\Playground\fincore\domain\target\classes;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.4\spring-boot-starter-web-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.4\spring-boot-starter-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot\3.3.4\spring-boot-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.4\spring-boot-autoconfigure-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.4\spring-boot-starter-logging-3.3.4.jar;C:\Users\vitor\.m2\repository\ch\qos\logback\logback-classic\1.5.8\logback-classic-1.5.8.jar;C:\Users\vitor\.m2\repository\ch\qos\logback\logback-core\1.5.8\logback-core-1.5.8.jar;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\vitor\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\vitor\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\vitor\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.4\spring-boot-starter-json-3.3.4.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.4\spring-boot-starter-tomcat-3.3.4.jar;C:\Users\vitor\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.30\tomcat-embed-core-10.1.30.jar;C:\Users\vitor\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.30\tomcat-embed-websocket-10.1.30.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-web\6.1.13\spring-web-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-beans\6.1.13\spring-beans-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-webmvc\6.1.13\spring-webmvc-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-expression\6.1.13\spring-expression-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.3.4\spring-boot-starter-validation-3.3.4.jar;C:\Users\vitor\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.30\tomcat-embed-el-10.1.30.jar;C:\Users\vitor\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\vitor\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\vitor\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\vitor\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.4\spring-boot-starter-security-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-aop\6.1.13\spring-aop-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-config\6.3.3\spring-security-config-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-core\6.3.3\spring-security-core-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-crypto\6.3.3\spring-security-crypto-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\security\spring-security-web\6.3.3\spring-security-web-6.3.3.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.4\spring-boot-starter-data-jpa-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.4\spring-boot-starter-aop-3.3.4.jar;C:\Users\vitor\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.4\spring-boot-starter-jdbc-3.3.4.jar;C:\Users\vitor\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-jdbc\6.1.13\spring-jdbc-6.1.13.jar;C:\Users\vitor\.m2\repository\org\hibernate\orm\hibernate-core\6.5.3.Final\hibernate-core-6.5.3.Final.jar;C:\Users\vitor\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\vitor\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\vitor\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\vitor\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\vitor\.m2\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;C:\Users\vitor\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\vitor\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\vitor\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\vitor\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\vitor\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\vitor\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\vitor\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\vitor\.m2\repository\org\springframework\data\spring-data-jpa\3.3.4\spring-data-jpa-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\data\spring-data-commons\3.3.4\spring-data-commons-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-orm\6.1.13\spring-orm-6.1.13.jar;C:\Users\vitor\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-aspects\6.1.13\spring-aspects-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\kafka\spring-kafka\3.2.4\spring-kafka-3.2.4.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-context\6.1.13\spring-context-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-messaging\6.1.13\spring-messaging-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-tx\6.1.13\spring-tx-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\retry\spring-retry\2.0.9\spring-retry-2.0.9.jar;C:\Users\vitor\.m2\repository\org\apache\kafka\kafka-clients\3.7.1\kafka-clients-3.7.1.jar;C:\Users\vitor\.m2\repository\com\github\luben\zstd-jni\1.5.6-3\zstd-jni-1.5.6-3.jar;C:\Users\vitor\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\vitor\.m2\repository\org\xerial\snappy\snappy-java\1.1.10.5\snappy-java-1.1.10.5.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-observation\1.13.4\micrometer-observation-1.13.4.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-commons\1.13.4\micrometer-commons-1.13.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.3.4\spring-boot-starter-actuator-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.3.4\spring-boot-actuator-autoconfigure-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-actuator\3.3.4\spring-boot-actuator-3.3.4.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-jakarta9\1.13.4\micrometer-jakarta9-1.13.4.jar;C:\Users\vitor\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.6.0\springdoc-openapi-starter-webmvc-ui-2.6.0.jar;C:\Users\vitor\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.6.0\springdoc-openapi-starter-webmvc-api-2.6.0.jar;C:\Users\vitor\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.6.0\springdoc-openapi-starter-common-2.6.0.jar;C:\Users\vitor\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.22\swagger-core-jakarta-2.2.22.jar;C:\Users\vitor\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\vitor\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.22\swagger-annotations-jakarta-2.2.22.jar;C:\Users\vitor\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.22\swagger-models-jakarta-2.2.22.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\vitor\.m2\repository\org\webjars\swagger-ui\5.17.14\swagger-ui-5.17.14.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-registry-prometheus\1.13.4\micrometer-registry-prometheus-1.13.4.jar;C:\Users\vitor\.m2\repository\io\micrometer\micrometer-core\1.13.4\micrometer-core-1.13.4.jar;C:\Users\vitor\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\vitor\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-core\1.2.1\prometheus-metrics-core-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-model\1.2.1\prometheus-metrics-model-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-config\1.2.1\prometheus-metrics-config-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-tracer-common\1.2.1\prometheus-metrics-tracer-common-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-exposition-formats\1.2.1\prometheus-metrics-exposition-formats-1.2.1.jar;C:\Users\vitor\.m2\repository\io\prometheus\prometheus-metrics-shaded-protobuf\1.2.1\prometheus-metrics-shaded-protobuf-1.2.1.jar;C:\Users\vitor\.m2\repository\org\flywaydb\flyway-core\10.10.0\flyway-core-10.10.0.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.17.2\jackson-dataformat-toml-2.17.2.jar;C:\Users\vitor\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\vitor\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\vitor\.m2\repository\org\flywaydb\flyway-database-postgresql\10.10.0\flyway-database-postgresql-10.10.0.jar;C:\Users\vitor\.m2\repository\org\postgresql\postgresql\42.7.4\postgresql-42.7.4.jar;C:\Users\vitor\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.4\spring-boot-starter-test-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-test\3.3.4\spring-boot-test-3.3.4.jar;C:\Users\vitor\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.4\spring-boot-test-autoconfigure-3.3.4.jar;C:\Users\vitor\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\vitor\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\vitor\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\vitor\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\vitor\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\vitor\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\vitor\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\vitor\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\vitor\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\vitor\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\vitor\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\vitor\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\vitor\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\vitor\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\vitor\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\vitor\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;C:\Users\vitor\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\vitor\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\vitor\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\vitor\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-core\6.1.13\spring-core-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-jcl\6.1.13\spring-jcl-6.1.13.jar;C:\Users\vitor\.m2\repository\org\springframework\spring-test\6.1.13\spring-test-6.1.13.jar;C:\Users\vitor\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\vitor\.m2\repository\org\testcontainers\junit-jupiter\1.19.8\junit-jupiter-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\testcontainers\1.19.8\testcontainers-1.19.8.jar;C:\Users\vitor\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\vitor\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\vitor\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\vitor\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\vitor\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\vitor\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\vitor\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.3.6\docker-java-transport-zerodep-3.3.6.jar;C:\Users\vitor\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\vitor\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\vitor\.m2\repository\org\testcontainers\postgresql\1.19.8\postgresql-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\jdbc\1.19.8\jdbc-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\database-commons\1.19.8\database-commons-1.19.8.jar;C:\Users\vitor\.m2\repository\org\testcontainers\kafka\1.19.8\kafka-1.19.8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vitor"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\vitor\OneDrive\Documentos\Playground\fincore\infrastructure"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\vitor\AppData\Local\Temp\surefire15937005671510681532\surefirebooter-20260317170239933_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-LTS"/>
+    <property name="user.name" value="vitor"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.10+7"/>
+    <property name="localRepository" value="C:\Users\vitor\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\vitor\AppData\Local\Temp\"/>
+    <property name="catalina.home" value="C:\Users\vitor\AppData\Local\Temp\tomcat.0.8158124845871704846"/>
+    <property name="com.zaxxer.hikari.pool_number" value="5"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="C:\Users\vitor\OneDrive\Documentos\Playground\fincore\infrastructure"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="30796"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="catalina.base" value="C:\Users\vitor\AppData\Local\Temp\tomcat.0.12647350035526003696"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\vitor\.codex\tmp\arg0\codex-arg0AtvLRt;C:\Program Files\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-17.0.8.101-hotspot\bin;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\vitor\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\vitor\AppData\Local\Programs\Python\Python313\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\terraform_1.13.3_windows_amd64;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\vitor\AppData\Local\Programs\Python\Launcher\;C:\Users\vitor\AppData\Local\Microsoft\WindowsApps;C:\Users\vitor\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vitor\.dotnet\tools;C:\Users\vitor\AppData\Local\Programs\Ollama;C:\Users\vitor\.lmstudio\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.3\bin;C:\Users\vitor\AppData\Roaming\npm;C:\Users\vitor\.dotnet\tools;C:\maven\apache-maven-3.9.13\bin;C:\Users\vitor\Downloads\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;C:\Users\vitor\AppData\Local\OpenAI\Codex\bin;C:\Program Files\WindowsApps\OpenAI.Codex_26.311.2262.0_x64__2p2nqsd0c76g0\app\resources;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.10+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%d{yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSXXX} %-5level [%thread] %logger{36} - %msg %kvp%n"/>
+  </properties>
+  <testcase name="idempotency_prevents_duplicate_transactions" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.498">
+    <system-out><![CDATA[2026-03-17T17:04:04.818-03:00 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.fincore.infrastructure.FincoreApplication for test class com.fincore.infrastructure.TransferIntegrationTest 
+2026-03-17T17:04:04.822-03:00 INFO  [main] tc.confluentinc/cp-kafka:7.6.1 - Creating container for image: confluentinc/cp-kafka:7.6.1 
+2026-03-17T17:04:04.991-03:00 INFO  [main] tc.confluentinc/cp-kafka:7.6.1 - Container confluentinc/cp-kafka:7.6.1 is starting: 2b7a67ce4c3a033a0c2169e123adb82c58fabd9c1b3958c70a4e3c0d54f99ed3 
+2026-03-17T17:04:18.324-03:00 INFO  [main] tc.confluentinc/cp-kafka:7.6.1 - Container confluentinc/cp-kafka:7.6.1 started in PT13.5016481S 
+2026-03-17T17:04:18.326-03:00 INFO  [main] tc.postgres:13.10-alpine - Creating container for image: postgres:13.10-alpine 
+2026-03-17T17:04:18.614-03:00 INFO  [main] tc.postgres:13.10-alpine - Container postgres:13.10-alpine is starting: 0ca53936c2ad59a0cc5aaf36a00d1e6b53e1ea8b3ce84c34730d237a8671c761 
+2026-03-17T17:04:24.336-03:00 INFO  [main] tc.postgres:13.10-alpine - Container postgres:13.10-alpine started in PT6.0094989S 
+2026-03-17T17:04:24.337-03:00 INFO  [main] tc.postgres:13.10-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:62725/fincore?loggerLevel=OFF) 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-03-17T17:04:24.457-03:00 INFO  [main] c.f.i.TransferIntegrationTest - Starting TransferIntegrationTest using Java 21.0.10 with PID 30796 (started by vitor in C:\Users\vitor\OneDrive\Documentos\Playground\fincore\infrastructure) 
+2026-03-17T17:04:24.459-03:00 INFO  [main] c.f.i.TransferIntegrationTest - No active profile set, falling back to 1 default profile: "local" 
+2026-03-17T17:04:25.219-03:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2026-03-17T17:04:25.261-03:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces. 
+2026-03-17T17:04:25.589-03:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting... 
+2026-03-17T17:04:25.720-03:00 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@59101d9c 
+2026-03-17T17:04:25.720-03:00 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed. 
+2026-03-17T17:04:25.732-03:00 INFO  [main] org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:62725/fincore (PostgreSQL 13.10) 
+2026-03-17T17:04:25.827-03:00 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet 
+2026-03-17T17:04:25.831-03:00 INFO  [main] o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.031s) 
+2026-03-17T17:04:25.880-03:00 INFO  [main] o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" ... 
+2026-03-17T17:04:25.962-03:00 INFO  [main] o.f.core.internal.command.DbMigrate - Current version of schema "public": << Empty Schema >> 
+2026-03-17T17:04:25.998-03:00 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "1 - init" 
+2026-03-17T17:04:26.123-03:00 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "2 - processed events" 
+2026-03-17T17:04:26.171-03:00 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "3 - outbox correlation id" 
+2026-03-17T17:04:26.217-03:00 INFO  [main] o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "4 - audit logs" 
+2026-03-17T17:04:26.263-03:00 INFO  [main] o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema "public", now at version v4 (execution time 00:00.146s) 
+2026-03-17T17:04:26.370-03:00 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2026-03-17T17:04:26.403-03:00 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+2026-03-17T17:04:26.497-03:00 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+2026-03-17T17:04:26.983-03:00 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+2026-03-17T17:04:27.056-03:00 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2026-03-17T17:04:27.874-03:00 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService 
+2026-03-17T17:04:28.263-03:00 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator' 
+2026-03-17T17:04:29.502-03:00 INFO  [main] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [PLAINTEXT://localhost:52824]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-fincore-transaction-completed-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = fincore-transaction-completed
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+ 
+2026-03-17T17:04:29.731-03:00 INFO  [main] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector 
+2026-03-17T17:04:29.944-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1 
+2026-03-17T17:04:29.944-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828 
+2026-03-17T17:04:29.944-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1773777869944 
+2026-03-17T17:04:29.984-03:00 INFO  [main] o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Subscribed to topic(s): transaction.completed 
+2026-03-17T17:04:30.031-03:00 INFO  [main] c.f.i.TransferIntegrationTest - Started TransferIntegrationTest in 5.671 seconds (process running for 109.723) 
+2026-03-17T17:04:30.183-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="c69edc99-73fb-494d-8513-3a9c8e3bb494" source_account_id="41ecf146-3ae0-4981-a275-8e171f521ac7" destination_account_id="7542a2e1-fb25-490d-a632-e8c2a2fa6a25" amount="200" idempotency_key="idem-1" transfer_status="STARTED"
+2026-03-17T17:04:30.421-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="c69edc99-73fb-494d-8513-3a9c8e3bb494" transaction_id="50e0b1af-a99a-49fe-878a-7a68dcb08838" source_account_id="41ecf146-3ae0-4981-a275-8e171f521ac7" destination_account_id="7542a2e1-fb25-490d-a632-e8c2a2fa6a25" transfer_status="COMPLETED" idempotent_replay="false"
+2026-03-17T17:04:30.421-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="58c6fb5b-6c1a-47a6-942b-1b6efa437fdf" source_account_id="41ecf146-3ae0-4981-a275-8e171f521ac7" destination_account_id="7542a2e1-fb25-490d-a632-e8c2a2fa6a25" amount="200" idempotency_key="idem-1" transfer_status="STARTED"
+2026-03-17T17:04:30.460-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="58c6fb5b-6c1a-47a6-942b-1b6efa437fdf" transaction_id="50e0b1af-a99a-49fe-878a-7a68dcb08838" source_account_id="41ecf146-3ae0-4981-a275-8e171f521ac7" destination_account_id="7542a2e1-fb25-490d-a632-e8c2a2fa6a25" transfer_status="COMPLETED" idempotent_replay="true"
+]]></system-out>
+  </testcase>
+  <testcase name="outbox_event_published_after_transaction_commit" classname="com.fincore.infrastructure.TransferIntegrationTest" time="3.263">
+    <system-out><![CDATA[2026-03-17T17:04:30.672-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="37923130-1fa2-4561-8bdc-44772f5e3f91" source_account_id="ee6eb7ef-84e9-4703-9b6a-bc022d84f913" destination_account_id="69d3eca9-7dc3-4739-9b06-2ee9a34ab7c6" amount="100" idempotency_key="idem-outbox-1" transfer_status="STARTED"
+2026-03-17T17:04:30.704-03:00 WARN  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Error while fetching metadata with correlation id 2 : {transaction.completed=LEADER_NOT_AVAILABLE} 
+2026-03-17T17:04:30.707-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Cluster ID: YQNBMMmURo696OpRPaJViQ 
+2026-03-17T17:04:30.834-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="37923130-1fa2-4561-8bdc-44772f5e3f91" transaction_id="9420ca06-517a-41c6-9e3b-80e411382d49" source_account_id="ee6eb7ef-84e9-4703-9b6a-bc022d84f913" destination_account_id="69d3eca9-7dc3-4739-9b06-2ee9a34ab7c6" transfer_status="COMPLETED" idempotent_replay="false"
+2026-03-17T17:04:30.835-03:00 INFO  [main] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [PLAINTEXT://localhost:52824]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-ebda7f45-9cf9-46cb-892c-eec0512de3dd
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+ 
+2026-03-17T17:04:30.837-03:00 INFO  [main] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector 
+2026-03-17T17:04:30.879-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1 
+2026-03-17T17:04:30.881-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828 
+2026-03-17T17:04:30.881-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1773777870879 
+2026-03-17T17:04:30.882-03:00 INFO  [main] o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Subscribed to topic(s): transaction.completed 
+2026-03-17T17:04:31.022-03:00 WARN  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Error while fetching metadata with correlation id 5 : {transaction.completed=LEADER_NOT_AVAILABLE} 
+2026-03-17T17:04:31.051-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.batch.started batch_size="2"
+2026-03-17T17:04:31.051-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.attempt correlation_id="37923130-1fa2-4561-8bdc-44772f5e3f91" event_id="b9dafe33-b434-459f-b4c5-ccab418bcdb0" transaction_id="9420ca06-517a-41c6-9e3b-80e411382d49" publish_status="PENDING"
+2026-03-17T17:04:31.115-03:00 INFO  [main] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [PLAINTEXT://localhost:52824]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+ 
+2026-03-17T17:04:31.118-03:00 INFO  [main] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector 
+2026-03-17T17:04:31.159-03:00 INFO  [main] o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer. 
+2026-03-17T17:04:31.222-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1 
+2026-03-17T17:04:31.222-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828 
+2026-03-17T17:04:31.222-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1773777871222 
+2026-03-17T17:04:31.324-03:00 WARN  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Error while fetching metadata with correlation id 7 : {transaction.completed=LEADER_NOT_AVAILABLE} 
+2026-03-17T17:04:31.342-03:00 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {transaction.created=LEADER_NOT_AVAILABLE} 
+2026-03-17T17:04:31.343-03:00 INFO  [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: YQNBMMmURo696OpRPaJViQ 
+2026-03-17T17:04:31.597-03:00 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {transaction.created=LEADER_NOT_AVAILABLE} 
+2026-03-17T17:04:31.626-03:00 INFO  [kafka-producer-network-thread | producer-1] o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 0 with epoch 0 
+2026-03-17T17:04:31.821-03:00 WARN  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Error while fetching metadata with correlation id 9 : {transaction.completed=LEADER_NOT_AVAILABLE} 
+2026-03-17T17:04:31.850-03:00 WARN  [kafka-producer-network-thread | producer-1] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 7 : {transaction.created=LEADER_NOT_AVAILABLE} 
+2026-03-17T17:04:32.500-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.completed correlation_id="37923130-1fa2-4561-8bdc-44772f5e3f91" event_id="b9dafe33-b434-459f-b4c5-ccab418bcdb0" transaction_id="9420ca06-517a-41c6-9e3b-80e411382d49" publish_status="SUCCESS"
+2026-03-17T17:04:32.500-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.attempt correlation_id="37923130-1fa2-4561-8bdc-44772f5e3f91" event_id="b5b4f37e-1924-4717-883c-df20c9080fcc" transaction_id="9420ca06-517a-41c6-9e3b-80e411382d49" publish_status="PENDING"
+2026-03-17T17:04:32.543-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.completed correlation_id="37923130-1fa2-4561-8bdc-44772f5e3f91" event_id="b5b4f37e-1924-4717-883c-df20c9080fcc" transaction_id="9420ca06-517a-41c6-9e3b-80e411382d49" publish_status="SUCCESS"
+2026-03-17T17:04:32.546-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.batch.completed batch_size="2" publish_status="SUCCESS"
+2026-03-17T17:04:32.608-03:00 INFO  [main] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Cluster ID: YQNBMMmURo696OpRPaJViQ 
+2026-03-17T17:04:32.609-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Discovered group coordinator localhost:52824 (id: 2147483646 rack: null) 
+2026-03-17T17:04:32.622-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] (Re-)joining group 
+2026-03-17T17:04:32.630-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Discovered group coordinator localhost:52824 (id: 2147483646 rack: null) 
+2026-03-17T17:04:32.634-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] (Re-)joining group 
+2026-03-17T17:04:32.778-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Request joining group due to: need to re-join with the given member-id: consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2-64e16981-e659-47e8-aef5-095e17bf5696 
+2026-03-17T17:04:32.778-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Request joining group due to: need to re-join with the given member-id: consumer-fincore-transaction-completed-1-f92a037e-697e-4742-912f-257a0e57f17e 
+2026-03-17T17:04:32.779-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] (Re-)joining group 
+2026-03-17T17:04:32.779-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] (Re-)joining group 
+2026-03-17T17:04:32.910-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Successfully joined group with generation Generation{generationId=1, memberId='consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2-64e16981-e659-47e8-aef5-095e17bf5696', protocol='range'} 
+2026-03-17T17:04:32.921-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Successfully joined group with generation Generation{generationId=1, memberId='consumer-fincore-transaction-completed-1-f92a037e-697e-4742-912f-257a0e57f17e', protocol='range'} 
+2026-03-17T17:04:32.925-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Finished assignment for group at generation 1: {consumer-fincore-transaction-completed-1-f92a037e-697e-4742-912f-257a0e57f17e=Assignment(partitions=[transaction.completed-0])} 
+2026-03-17T17:04:32.929-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Finished assignment for group at generation 1: {consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2-64e16981-e659-47e8-aef5-095e17bf5696=Assignment(partitions=[transaction.completed-0])} 
+2026-03-17T17:04:33.044-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Successfully synced group in generation Generation{generationId=1, memberId='consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2-64e16981-e659-47e8-aef5-095e17bf5696', protocol='range'} 
+2026-03-17T17:04:33.044-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Successfully synced group in generation Generation{generationId=1, memberId='consumer-fincore-transaction-completed-1-f92a037e-697e-4742-912f-257a0e57f17e', protocol='range'} 
+2026-03-17T17:04:33.045-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Notifying assignor about the new Assignment(partitions=[transaction.completed-0]) 
+2026-03-17T17:04:33.045-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Notifying assignor about the new Assignment(partitions=[transaction.completed-0]) 
+2026-03-17T17:04:33.050-03:00 INFO  [main] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Adding newly assigned partitions: transaction.completed-0 
+2026-03-17T17:04:33.050-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Adding newly assigned partitions: transaction.completed-0 
+2026-03-17T17:04:33.088-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Found no committed offset for partition transaction.completed-0 
+2026-03-17T17:04:33.088-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Found no committed offset for partition transaction.completed-0 
+2026-03-17T17:04:33.095-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Found no committed offset for partition transaction.completed-0 
+2026-03-17T17:04:33.125-03:00 INFO  [main] o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Resetting offset for partition transaction.completed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:52824 (id: 1 rack: null)], epoch=0}}. 
+2026-03-17T17:04:33.125-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-fincore-transaction-completed-1, groupId=fincore-transaction-completed] Resetting offset for partition transaction.completed-0 to position FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:52824 (id: 1 rack: null)], epoch=0}}. 
+2026-03-17T17:04:33.203-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer - fincore-transaction-completed: partitions assigned: [transaction.completed-0] 
+2026-03-17T17:04:33.302-03:00 INFO  [main] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Revoke previously assigned partitions transaction.completed-0 
+2026-03-17T17:04:33.303-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Member consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2-64e16981-e659-47e8-aef5-095e17bf5696 sending LeaveGroup request to coordinator localhost:52824 (id: 2147483646 rack: null) due to the consumer is being closed 
+2026-03-17T17:04:33.304-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Resetting generation and member id due to: consumer pro-actively leaving the group 
+2026-03-17T17:04:33.304-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2, groupId=test-ebda7f45-9cf9-46cb-892c-eec0512de3dd] Request joining group due to: consumer pro-actively leaving the group 
+2026-03-17T17:04:33.782-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed 
+2026-03-17T17:04:33.782-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter 
+2026-03-17T17:04:33.782-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter 
+2026-03-17T17:04:33.782-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Metrics reporters closed 
+2026-03-17T17:04:33.790-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-test-ebda7f45-9cf9-46cb-892c-eec0512de3dd-2 unregistered 
+]]></system-out>
+  </testcase>
+  <testcase name="atomicity_rolls_back_when_destination_missing" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.206">
+    <system-out><![CDATA[2026-03-17T17:04:33.912-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="b0f59493-3ae1-4177-91c0-a0d5786540d6" source_account_id="fd342151-04b4-4066-b609-2b315c91b948" destination_account_id="bc91b816-824c-4fe4-876b-0a5e410ad80a" amount="100" idempotency_key="idem-missing" transfer_status="STARTED"
+2026-03-17T17:04:33.976-03:00 WARN  [main] c.f.i.service.TransferService - transfer.failed correlation_id="b0f59493-3ae1-4177-91c0-a0d5786540d6" source_account_id="fd342151-04b4-4066-b609-2b315c91b948" destination_account_id="bc91b816-824c-4fe4-876b-0a5e410ad80a" amount="100" transfer_status="FAILED"
+com.fincore.application.usecases.NotFoundException: account not found
+	at com.fincore.application.usecases.TransferUseCase.execute(TransferUseCase.java:72)
+	at com.fincore.infrastructure.service.TransferExecutionService.execute(TransferExecutionService.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.fincore.infrastructure.service.TransferExecutionService$$SpringCGLIB$$0.execute(<generated>)
+	at com.fincore.infrastructure.service.TransferService.transfer(TransferService.java:41)
+	at com.fincore.infrastructure.TransferIntegrationTest.lambda$atomicity_rolls_back_when_destination_missing$12(TransferIntegrationTest.java:375)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.AssertionsForClassTypes.catchThrowable(AssertionsForClassTypes.java:892)
+	at org.assertj.core.api.Assertions.catchThrowable(Assertions.java:1365)
+	at org.assertj.core.api.Assertions.assertThatThrownBy(Assertions.java:1209)
+	at com.fincore.infrastructure.TransferIntegrationTest.atomicity_rolls_back_when_destination_missing(TransferIntegrationTest.java:375)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="ledger_contains_debit_and_credit_entries" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.157">
+    <system-out><![CDATA[2026-03-17T17:04:34.068-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="a8fa6f99-a20a-48ab-96fb-c5bebf4ae3fa" source_account_id="a7d73b91-7aa8-4faf-971d-7e35d8a2e98f" destination_account_id="f45271f7-f4b2-4c67-af40-910a8a456b34" amount="150" idempotency_key="idem-ledger" transfer_status="STARTED"
+2026-03-17T17:04:34.160-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="a8fa6f99-a20a-48ab-96fb-c5bebf4ae3fa" transaction_id="b9799756-3b38-46fc-abee-26b687421fde" source_account_id="a7d73b91-7aa8-4faf-971d-7e35d8a2e98f" destination_account_id="f45271f7-f4b2-4c67-af40-910a8a456b34" transfer_status="COMPLETED" idempotent_replay="false"
+]]></system-out>
+  </testcase>
+  <testcase name="failed_transfer_increments_request_failure_metric" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.119">
+    <system-out><![CDATA[2026-03-17T17:04:34.216-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="a648f749-b762-41bc-9a3c-b6dfaa77e891" source_account_id="b256aedb-9619-4c89-8364-32d0ff425eb3" destination_account_id="22e01abd-99f0-4844-83f1-28a4b565b270" amount="100" idempotency_key="idem-metrics-failure" transfer_status="STARTED"
+2026-03-17T17:04:34.287-03:00 WARN  [main] c.f.i.service.TransferService - transfer.failed correlation_id="a648f749-b762-41bc-9a3c-b6dfaa77e891" source_account_id="b256aedb-9619-4c89-8364-32d0ff425eb3" destination_account_id="22e01abd-99f0-4844-83f1-28a4b565b270" amount="100" transfer_status="FAILED"
+com.fincore.application.usecases.BusinessRuleViolationException: insufficient funds
+	at com.fincore.application.usecases.TransferUseCase.execute(TransferUseCase.java:79)
+	at com.fincore.infrastructure.service.TransferExecutionService.execute(TransferExecutionService.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.fincore.infrastructure.service.TransferExecutionService$$SpringCGLIB$$0.execute(<generated>)
+	at com.fincore.infrastructure.service.TransferService.transfer(TransferService.java:41)
+	at com.fincore.infrastructure.TransferIntegrationTest.lambda$failed_transfer_increments_request_failure_metric$7(TransferIntegrationTest.java:290)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.AssertionsForClassTypes.catchThrowable(AssertionsForClassTypes.java:892)
+	at org.assertj.core.api.Assertions.catchThrowable(Assertions.java:1365)
+	at org.assertj.core.api.Assertions.assertThatThrownBy(Assertions.java:1209)
+	at com.fincore.infrastructure.TransferIntegrationTest.failed_transfer_increments_request_failure_metric(TransferIntegrationTest.java:290)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="publisher_does_not_duplicate_events" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.79">
+    <system-out><![CDATA[2026-03-17T17:04:34.347-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" source_account_id="c6406704-5f0a-430e-9b2b-93032f5d8a43" destination_account_id="699bfada-794b-48e9-8a84-e4b6942da39e" amount="75" idempotency_key="idem-outbox-3" transfer_status="STARTED"
+2026-03-17T17:04:34.431-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" transaction_id="8e5d0ab5-537d-4592-bc4e-01c80d0c0594" source_account_id="c6406704-5f0a-430e-9b2b-93032f5d8a43" destination_account_id="699bfada-794b-48e9-8a84-e4b6942da39e" transfer_status="COMPLETED" idempotent_replay="false"
+2026-03-17T17:04:34.432-03:00 INFO  [main] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [PLAINTEXT://localhost:52824]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+ 
+2026-03-17T17:04:34.433-03:00 INFO  [main] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector 
+2026-03-17T17:04:34.441-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1 
+2026-03-17T17:04:34.442-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828 
+2026-03-17T17:04:34.442-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1773777874441 
+2026-03-17T17:04:34.442-03:00 INFO  [main] o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Subscribed to topic(s): transaction.completed 
+2026-03-17T17:04:34.446-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.batch.started batch_size="2"
+2026-03-17T17:04:34.446-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.attempt correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" event_id="d157f430-61d6-4d76-8cf9-1ba1ea355a1b" transaction_id="8e5d0ab5-537d-4592-bc4e-01c80d0c0594" publish_status="PENDING"
+2026-03-17T17:04:34.457-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.completed correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" event_id="d157f430-61d6-4d76-8cf9-1ba1ea355a1b" transaction_id="8e5d0ab5-537d-4592-bc4e-01c80d0c0594" publish_status="SUCCESS"
+2026-03-17T17:04:34.457-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.attempt correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" event_id="0c605fc7-6f47-4df9-8724-74116d2d0e39" transaction_id="8e5d0ab5-537d-4592-bc4e-01c80d0c0594" publish_status="PENDING"
+2026-03-17T17:04:34.466-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.completed correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" event_id="0c605fc7-6f47-4df9-8724-74116d2d0e39" transaction_id="8e5d0ab5-537d-4592-bc4e-01c80d0c0594" publish_status="SUCCESS"
+2026-03-17T17:04:34.467-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.batch.completed batch_size="2" publish_status="SUCCESS"
+2026-03-17T17:04:34.481-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.f.i.k.TransactionCompletedConsumer - transaction.completed.received correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" event_id="0c605fc7-6f47-4df9-8724-74116d2d0e39" transaction_id="8e5d0ab5-537d-4592-bc4e-01c80d0c0594" transfer_status="COMPLETED" deduplication_decision="PENDING"
+2026-03-17T17:04:34.496-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.f.i.k.TransactionCompletedConsumer - transaction.completed.handled correlation_id="2bcc1529-3baf-4f87-a99e-58a562ec53f5" event_id="0c605fc7-6f47-4df9-8724-74116d2d0e39" transaction_id="8e5d0ab5-537d-4592-bc4e-01c80d0c0594" transfer_status="COMPLETED" deduplication_decision="PROCESSED"
+2026-03-17T17:04:34.497-03:00 INFO  [main] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Cluster ID: YQNBMMmURo696OpRPaJViQ 
+2026-03-17T17:04:34.500-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Discovered group coordinator localhost:52824 (id: 2147483646 rack: null) 
+2026-03-17T17:04:34.506-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] (Re-)joining group 
+2026-03-17T17:04:34.515-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Request joining group due to: need to re-join with the given member-id: consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3-97d2c878-3d8d-41be-bf43-33bb6627ffe9 
+2026-03-17T17:04:34.515-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] (Re-)joining group 
+2026-03-17T17:04:34.527-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Successfully joined group with generation Generation{generationId=1, memberId='consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3-97d2c878-3d8d-41be-bf43-33bb6627ffe9', protocol='range'} 
+2026-03-17T17:04:34.527-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Finished assignment for group at generation 1: {consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3-97d2c878-3d8d-41be-bf43-33bb6627ffe9=Assignment(partitions=[transaction.completed-0])} 
+2026-03-17T17:04:34.538-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Successfully synced group in generation Generation{generationId=1, memberId='consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3-97d2c878-3d8d-41be-bf43-33bb6627ffe9', protocol='range'} 
+2026-03-17T17:04:34.538-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Notifying assignor about the new Assignment(partitions=[transaction.completed-0]) 
+2026-03-17T17:04:34.538-03:00 INFO  [main] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Adding newly assigned partitions: transaction.completed-0 
+2026-03-17T17:04:34.543-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Found no committed offset for partition transaction.completed-0 
+2026-03-17T17:04:34.555-03:00 INFO  [main] o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Resetting offset for partition transaction.completed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:52824 (id: 1 rack: null)], epoch=0}}. 
+2026-03-17T17:04:34.573-03:00 INFO  [main] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Revoke previously assigned partitions transaction.completed-0 
+2026-03-17T17:04:34.573-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Member consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3-97d2c878-3d8d-41be-bf43-33bb6627ffe9 sending LeaveGroup request to coordinator localhost:52824 (id: 2147483646 rack: null) due to the consumer is being closed 
+2026-03-17T17:04:34.574-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Resetting generation and member id due to: consumer pro-actively leaving the group 
+2026-03-17T17:04:34.574-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3, groupId=test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d] Request joining group due to: consumer pro-actively leaving the group 
+2026-03-17T17:04:35.074-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed 
+2026-03-17T17:04:35.074-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter 
+2026-03-17T17:04:35.074-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter 
+2026-03-17T17:04:35.074-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Metrics reporters closed 
+2026-03-17T17:04:35.079-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-test-25b2ca0d-fceb-4d71-9bb8-eedd06137d5d-3 unregistered 
+]]></system-out>
+  </testcase>
+  <testcase name="failed_publish_retries_later" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.756">
+    <system-out><![CDATA[2026-03-17T17:04:35.121-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" source_account_id="300b9cdc-71bd-40b5-b48b-3bf485dea171" destination_account_id="50d649b2-0582-44c8-8c03-b7ac3bf1d1f5" amount="120" idempotency_key="idem-outbox-2" transfer_status="STARTED"
+2026-03-17T17:04:35.183-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" source_account_id="300b9cdc-71bd-40b5-b48b-3bf485dea171" destination_account_id="50d649b2-0582-44c8-8c03-b7ac3bf1d1f5" transfer_status="COMPLETED" idempotent_replay="false"
+2026-03-17T17:04:35.189-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.batch.started batch_size="2"
+2026-03-17T17:04:35.189-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.attempt correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="c7237b38-d9dc-4d91-a79b-bca173e8070d" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" publish_status="PENDING"
+2026-03-17T17:04:35.189-03:00 WARN  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.failed correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="c7237b38-d9dc-4d91-a79b-bca173e8070d" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" publish_status="FAILED"
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: simulated kafka failure
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.fincore.infrastructure.kafka.OutboxPublisher.publishOne(OutboxPublisher.java:88)
+	at com.fincore.infrastructure.kafka.OutboxPublisher.publishPending(OutboxPublisher.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.fincore.infrastructure.kafka.OutboxPublisher$$SpringCGLIB$$0.publishPending(<generated>)
+	at com.fincore.infrastructure.TransferIntegrationTest.lambda$failed_publish_retries_later$8(TransferIntegrationTest.java:316)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.AssertionsForClassTypes.catchThrowable(AssertionsForClassTypes.java:892)
+	at org.assertj.core.api.Assertions.catchThrowable(Assertions.java:1365)
+	at org.assertj.core.api.Assertions.assertThatThrownBy(Assertions.java:1209)
+	at com.fincore.infrastructure.TransferIntegrationTest.failed_publish_retries_later(TransferIntegrationTest.java:316)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.RuntimeException: simulated kafka failure
+	at com.fincore.infrastructure.TransferIntegrationTest$FailingKafkaTemplate.send(TransferIntegrationTest.java:524)
+	... 89 common frames omitted
+2026-03-17T17:04:35.193-03:00 INFO  [main] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [PLAINTEXT://localhost:52824]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test-a3fff53c-6567-4074-ae95-8e74025ec55b
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+ 
+2026-03-17T17:04:35.193-03:00 INFO  [main] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector 
+2026-03-17T17:04:35.201-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.7.1 
+2026-03-17T17:04:35.202-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: e2494e6ffb89f828 
+2026-03-17T17:04:35.202-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1773777875201 
+2026-03-17T17:04:35.202-03:00 INFO  [main] o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Subscribed to topic(s): transaction.completed 
+2026-03-17T17:04:35.207-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.batch.started batch_size="2"
+2026-03-17T17:04:35.207-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.attempt correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="c7237b38-d9dc-4d91-a79b-bca173e8070d" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" publish_status="PENDING"
+2026-03-17T17:04:35.217-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.completed correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="c7237b38-d9dc-4d91-a79b-bca173e8070d" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" publish_status="SUCCESS"
+2026-03-17T17:04:35.217-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.attempt correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="b746f656-1861-40af-9d4d-f25c4d7fc830" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" publish_status="PENDING"
+2026-03-17T17:04:35.224-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.completed correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="b746f656-1861-40af-9d4d-f25c4d7fc830" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" publish_status="SUCCESS"
+2026-03-17T17:04:35.225-03:00 INFO  [main] c.f.i.kafka.OutboxPublisher - outbox.publish.batch.completed batch_size="2" publish_status="SUCCESS"
+2026-03-17T17:04:35.227-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.f.i.k.TransactionCompletedConsumer - transaction.completed.received correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="b746f656-1861-40af-9d4d-f25c4d7fc830" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" transfer_status="COMPLETED" deduplication_decision="PENDING"
+2026-03-17T17:04:35.245-03:00 INFO  [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.f.i.k.TransactionCompletedConsumer - transaction.completed.handled correlation_id="bfd60fbe-1c98-417f-8060-c78eb99ca50d" event_id="b746f656-1861-40af-9d4d-f25c4d7fc830" transaction_id="cac00242-625e-4efe-8434-3330586d5c17" transfer_status="COMPLETED" deduplication_decision="PROCESSED"
+2026-03-17T17:04:35.253-03:00 INFO  [main] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Cluster ID: YQNBMMmURo696OpRPaJViQ 
+2026-03-17T17:04:35.260-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Discovered group coordinator localhost:52824 (id: 2147483646 rack: null) 
+2026-03-17T17:04:35.263-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] (Re-)joining group 
+2026-03-17T17:04:35.274-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Request joining group due to: need to re-join with the given member-id: consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4-71096ebe-8c6c-42fd-9137-91e88a8de457 
+2026-03-17T17:04:35.275-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] (Re-)joining group 
+2026-03-17T17:04:35.286-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Successfully joined group with generation Generation{generationId=1, memberId='consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4-71096ebe-8c6c-42fd-9137-91e88a8de457', protocol='range'} 
+2026-03-17T17:04:35.286-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Finished assignment for group at generation 1: {consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4-71096ebe-8c6c-42fd-9137-91e88a8de457=Assignment(partitions=[transaction.completed-0])} 
+2026-03-17T17:04:35.295-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Successfully synced group in generation Generation{generationId=1, memberId='consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4-71096ebe-8c6c-42fd-9137-91e88a8de457', protocol='range'} 
+2026-03-17T17:04:35.296-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Notifying assignor about the new Assignment(partitions=[transaction.completed-0]) 
+2026-03-17T17:04:35.296-03:00 INFO  [main] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Adding newly assigned partitions: transaction.completed-0 
+2026-03-17T17:04:35.300-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Found no committed offset for partition transaction.completed-0 
+2026-03-17T17:04:35.315-03:00 INFO  [main] o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Resetting offset for partition transaction.completed-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:52824 (id: 1 rack: null)], epoch=0}}. 
+2026-03-17T17:04:35.342-03:00 INFO  [main] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Revoke previously assigned partitions transaction.completed-0 
+2026-03-17T17:04:35.343-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Member consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4-71096ebe-8c6c-42fd-9137-91e88a8de457 sending LeaveGroup request to coordinator localhost:52824 (id: 2147483646 rack: null) due to the consumer is being closed 
+2026-03-17T17:04:35.344-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Resetting generation and member id due to: consumer pro-actively leaving the group 
+2026-03-17T17:04:35.344-03:00 INFO  [main] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4, groupId=test-a3fff53c-6567-4074-ae95-8e74025ec55b] Request joining group due to: consumer pro-actively leaving the group 
+2026-03-17T17:04:35.832-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed 
+2026-03-17T17:04:35.833-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter 
+2026-03-17T17:04:35.833-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter 
+2026-03-17T17:04:35.833-03:00 INFO  [main] o.a.kafka.common.metrics.Metrics - Metrics reporters closed 
+2026-03-17T17:04:35.838-03:00 INFO  [main] o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-test-a3fff53c-6567-4074-ae95-8e74025ec55b-4 unregistered 
+]]></system-out>
+  </testcase>
+  <testcase name="concurrent_transfers_use_pessimistic_locking" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.183">
+    <system-out><![CDATA[2026-03-17T17:04:35.898-03:00 INFO  [pool-2-thread-2] c.f.i.service.TransferService - transfer.started correlation_id="0043ac2d-ef50-42a5-88f4-90ba2eb20a3b" source_account_id="70be3693-d33c-46b0-b069-7276f7b6dcde" destination_account_id="bdb4f726-0858-4d3c-bc9a-aeec7ba5535d" amount="80" idempotency_key="idem-b" transfer_status="STARTED"
+2026-03-17T17:04:35.898-03:00 INFO  [pool-2-thread-1] c.f.i.service.TransferService - transfer.started correlation_id="efefa67c-7704-45a6-b210-788bf5e46484" source_account_id="70be3693-d33c-46b0-b069-7276f7b6dcde" destination_account_id="c72f018b-d0f7-4c22-aa5f-c70864c8f064" amount="80" idempotency_key="idem-a" transfer_status="STARTED"
+2026-03-17T17:04:35.986-03:00 INFO  [pool-2-thread-2] c.f.i.service.TransferService - transfer.completed correlation_id="0043ac2d-ef50-42a5-88f4-90ba2eb20a3b" transaction_id="6f14d007-e305-4f11-a6e9-87fb96fdd2b2" source_account_id="70be3693-d33c-46b0-b069-7276f7b6dcde" destination_account_id="bdb4f726-0858-4d3c-bc9a-aeec7ba5535d" transfer_status="COMPLETED" idempotent_replay="false"
+2026-03-17T17:04:36.005-03:00 WARN  [pool-2-thread-1] c.f.i.service.TransferService - transfer.failed correlation_id="efefa67c-7704-45a6-b210-788bf5e46484" source_account_id="70be3693-d33c-46b0-b069-7276f7b6dcde" destination_account_id="c72f018b-d0f7-4c22-aa5f-c70864c8f064" amount="80" transfer_status="FAILED"
+com.fincore.application.usecases.BusinessRuleViolationException: insufficient funds
+	at com.fincore.application.usecases.TransferUseCase.execute(TransferUseCase.java:79)
+	at com.fincore.infrastructure.service.TransferExecutionService.execute(TransferExecutionService.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.fincore.infrastructure.service.TransferExecutionService$$SpringCGLIB$$0.execute(<generated>)
+	at com.fincore.infrastructure.service.TransferService.transfer(TransferService.java:41)
+	at com.fincore.infrastructure.TransferIntegrationTest.attemptTransfer(TransferIntegrationTest.java:465)
+	at com.fincore.infrastructure.TransferIntegrationTest.lambda$concurrent_transfers_use_pessimistic_locking$0(TransferIntegrationTest.java:176)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></system-out>
+  </testcase>
+  <testcase name="transfer_metrics_split_request_success_from_unique_execution_success" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.147">
+    <system-out><![CDATA[2026-03-17T17:04:36.065-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="7a14170c-1e0f-41c4-b676-4acbadd9c87c" source_account_id="5d234d41-ed99-4ca5-9d01-fab399927c70" destination_account_id="9a5d62e4-c263-4dda-90b9-db2f620cf523" amount="200" idempotency_key="idem-metrics-success" transfer_status="STARTED"
+2026-03-17T17:04:36.147-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="7a14170c-1e0f-41c4-b676-4acbadd9c87c" transaction_id="c385cb0a-a81d-4b6a-9b13-06fda965e780" source_account_id="5d234d41-ed99-4ca5-9d01-fab399927c70" destination_account_id="9a5d62e4-c263-4dda-90b9-db2f620cf523" transfer_status="COMPLETED" idempotent_replay="false"
+2026-03-17T17:04:36.147-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="26cd4c8c-2dae-457f-b9e1-b62431e789d6" source_account_id="5d234d41-ed99-4ca5-9d01-fab399927c70" destination_account_id="9a5d62e4-c263-4dda-90b9-db2f620cf523" amount="200" idempotency_key="idem-metrics-success" transfer_status="STARTED"
+2026-03-17T17:04:36.169-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="26cd4c8c-2dae-457f-b9e1-b62431e789d6" transaction_id="c385cb0a-a81d-4b6a-9b13-06fda965e780" source_account_id="5d234d41-ed99-4ca5-9d01-fab399927c70" destination_account_id="9a5d62e4-c263-4dda-90b9-db2f620cf523" transfer_status="COMPLETED" idempotent_replay="true"
+]]></system-out>
+  </testcase>
+  <testcase name="audit_log_is_created_for_failed_transfer_with_correlation_id" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.085">
+    <system-out><![CDATA[2026-03-17T17:04:36.207-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="corr-transfer-failure" source_account_id="5952d03d-417a-4bf3-911a-68e1ebf98545" destination_account_id="4a787e2e-0930-47ec-8fd4-50633659b392" amount="100" idempotency_key="audit-failure" transfer_status="STARTED"
+2026-03-17T17:04:36.249-03:00 WARN  [main] c.f.i.service.TransferService - transfer.failed correlation_id="corr-transfer-failure" source_account_id="5952d03d-417a-4bf3-911a-68e1ebf98545" destination_account_id="4a787e2e-0930-47ec-8fd4-50633659b392" amount="100" transfer_status="FAILED"
+com.fincore.application.usecases.BusinessRuleViolationException: insufficient funds
+	at com.fincore.application.usecases.TransferUseCase.execute(TransferUseCase.java:79)
+	at com.fincore.infrastructure.service.TransferExecutionService.execute(TransferExecutionService.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.fincore.infrastructure.service.TransferExecutionService$$SpringCGLIB$$0.execute(<generated>)
+	at com.fincore.infrastructure.service.TransferService.transfer(TransferService.java:41)
+	at com.fincore.infrastructure.TransferIntegrationTest.lambda$audit_log_is_created_for_failed_transfer_with_correlation_id$14(TransferIntegrationTest.java:426)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.AssertionsForClassTypes.catchThrowable(AssertionsForClassTypes.java:892)
+	at org.assertj.core.api.Assertions.catchThrowable(Assertions.java:1365)
+	at org.assertj.core.api.Assertions.assertThatThrownBy(Assertions.java:1209)
+	at com.fincore.infrastructure.TransferIntegrationTest.audit_log_is_created_for_failed_transfer_with_correlation_id(TransferIntegrationTest.java:426)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="audit_log_is_created_for_successful_transfer" classname="com.fincore.infrastructure.TransferIntegrationTest" time="0.141">
+    <system-out><![CDATA[2026-03-17T17:04:36.304-03:00 INFO  [main] c.f.i.service.TransferService - transfer.started correlation_id="corr-transfer-success" source_account_id="0bf03884-3e23-4bd5-aab2-ee34f313f0bf" destination_account_id="a87a6210-e218-4e19-bdf1-439f4e37cd6f" amount="125" idempotency_key="audit-success" transfer_status="STARTED"
+2026-03-17T17:04:36.390-03:00 INFO  [main] c.f.i.service.TransferService - transfer.completed correlation_id="corr-transfer-success" transaction_id="0dc6db6b-342c-4931-8bd7-120d6ec6bd8b" source_account_id="0bf03884-3e23-4bd5-aab2-ee34f313f0bf" destination_account_id="a87a6210-e218-4e19-bdf1-439f4e37cd6f" transfer_status="COMPLETED" idempotent_replay="false"
+]]></system-out>
+  </testcase>
+</testsuite>

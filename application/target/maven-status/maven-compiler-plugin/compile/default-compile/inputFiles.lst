@@ -1,0 +1,17 @@
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\ports\AccountRepositoryPort.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\ports\LedgerEntryRepositoryPort.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\ports\OutboxMessage.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\ports\OutboxRepositoryPort.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\ports\ProcessedEventRepositoryPort.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\ports\TransactionRepositoryPort.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\BusinessRuleViolationException.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\CreateAccountUseCase.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\GetAccountUseCase.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\IdempotencyConflictException.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\NotFoundException.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\ProcessTransactionCompletedEventCommand.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\ProcessTransactionCompletedEventResult.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\ProcessTransactionCompletedEventUseCase.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\TransferCommand.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\TransferResult.java
+C:\Users\vitor\OneDrive\Documentos\Playground\fincore\application\src\main\java\com\fincore\application\usecases\TransferUseCase.java
